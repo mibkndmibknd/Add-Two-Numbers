@@ -9,16 +9,6 @@ class Solution {
         int x,y;
 	while(p!=null  || q!=null ){
           int sum=0;
-          /*
-	  if(p!=null && q!=null)
-            sum=p.val+q.val+carry;
-          else if(q!=null)
-            sum=q.val+carry;
-          else if(p!=null)
-            sum=p.val+carry;
-          else
-            sum=carry;
-	  */
 	  x= (p==null) ?0:p.val;
 	  y= (q==null) ?0:q.val;
           sum=x+y+carry;
