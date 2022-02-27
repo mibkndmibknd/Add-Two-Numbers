@@ -6,9 +6,11 @@ class Solution {
         ListNode q=l2;
         ListNode dummyhead=new ListNode(0);
         ListNode cur=dummyhead;
-        while(p!=null  || q!=null ){
+        int x,y;
+	while(p!=null  || q!=null ){
           int sum=0;
-          if(p!=null && q!=null)
+          /*
+	  if(p!=null && q!=null)
             sum=p.val+q.val+carry;
           else if(q!=null)
             sum=q.val+carry;
@@ -16,6 +18,10 @@ class Solution {
             sum=p.val+carry;
           else
             sum=carry;
+	  */
+	  x= (p==null) ?0:p.val;
+	  y= (q==null) ?0:q.val;
+          sum=x+y+carry;
           if(sum>=10){
             carry=1;
             sum=sum%10;
